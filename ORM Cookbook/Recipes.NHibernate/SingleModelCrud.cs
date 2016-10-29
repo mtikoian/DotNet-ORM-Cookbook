@@ -32,5 +32,4 @@ namespace Recipes.NHibernate
         }
     }
 
-
 }
