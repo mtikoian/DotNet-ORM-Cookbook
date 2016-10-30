@@ -48,11 +48,30 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Collections.Immutable, Version=1.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.Immutable.1.2.0\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Caching" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Tortuga.Anchor, Version=1.0.6144.42409, Culture=neutral, PublicKeyToken=f554488cb4f278bd, processorArchitecture=MSIL">
+      <HintPath>..\packages\Tortuga.Anchor.1.0.6144.42409\lib\net46\Tortuga.Anchor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Tortuga.Chain.Core, Version=1.0.6144.43080, Culture=neutral, PublicKeyToken=8769fd32a2872cf0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Tortuga.Chain.Core.1.0.6144.43048\lib\net46\Tortuga.Chain.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Tortuga.Chain.SqlServer, Version=1.0.6145.986, Culture=neutral, PublicKeyToken=8769fd32a2872cf0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Tortuga.Chain.SqlServer.1.0.6145.981\lib\net46\Tortuga.Chain.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="xunit.abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
       <HintPath>..\packages\xunit.abstractions.2.0.0\lib\net35\xunit.abstractions.dll</HintPath>
       <Private>True</Private>
@@ -79,6 +98,7 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
+    <Compile Include="ChainIntegration.cs" />
     <Compile Include="Models\Department.cs" />
     <Compile Include="Models\Division.cs" />
     <Compile Include="Models\Employee.cs" />
@@ -86,6 +106,7 @@
     <Compile Include="Models\Models.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\_Interfaces.cs" />
+    <Compile Include="Repositories\ChainForNHibernate.cs" />
     <Compile Include="Repositories\EmployeeClassificationRepository_Novice.cs" />
     <Compile Include="Repositories\EmployeeClassificationRepository_Intermediate.cs" />
     <Compile Include="SingleModelCrud.cs" />
